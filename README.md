@@ -1,6 +1,6 @@
 # Welcome to my Crappy Calculator
 
-This calculator was quickly thrown together in order to prove to myself that I could make a <em>very</em> basic by myself without any help. This calculator is very insecure (it uses [eval](https://24ways.org/2005/dont-be-eval/) to calculate the answer, and it is very impractical. However, if for some ungodly reason you would like to try it out, see [Installation](#installation). Also, an image is located at the bottom of the page in [Gallery](#gallery).
+This calculator was quickly thrown together in order to prove to myself that I could make a <em>very</em> basic React application by myself without any help. This calculator is very insecure (it uses [eval](https://24ways.org/2005/dont-be-eval/) to calculate the answer, and it is very impractical. However, if for some ungodly reason you would like to try it out, see [Installation](#installation). Also, an image is located at the bottom of the page in [Gallery](#gallery).
 
 ## Installation
 To install, simply clone the repo: <br/>
