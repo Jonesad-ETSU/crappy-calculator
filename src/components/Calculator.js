@@ -34,9 +34,9 @@ const Calculate = (state, action) => {
       }
     }
 
-    const mathString = mathNotation.join(' ');
+    const mathString = mathNotation.join(" ");
     if (/[A-Za-z]/.test(mathString)) {
-      alert('That is not very nice! XSS is very rude, ya know!');
+      alert("That is not very nice! XSS is very rude, ya know!");
     }
     // DO NOT USE EVAL IN PRODUCTION ENIVRONMENT - very bad practice
     // Use/Make a parser instead.
@@ -95,11 +95,14 @@ const Calculator = () => {
 
   return (
     <div className={styles["container"]}>
-      <CalculatorScreen
-        style={styles["screen"]}
-        items={numbers}
-        answer={numbers.answer}
-      />
+      <div>
+        <div className={styles.banner} />
+        <CalculatorScreen
+          style={styles["screen"]}
+          items={numbers}
+          answer={numbers.answer}
+        />
+      </div>
       <div className={styles["top-buttons-grid"]}>
         <CalculatorNumbers
           style={styles["number-grid"]}

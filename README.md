@@ -13,4 +13,4 @@ After installing the dependencies, you should be good to go and run the program 
 `npm start`
 
 ## Gallery
-<img align='center' src='images/calculator.png' href='A very useless calculator' />
+<img align='center' src='images/calculator_v2.png' href='A very useless calculator' />

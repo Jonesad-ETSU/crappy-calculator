@@ -14,11 +14,16 @@ export const CalculatorNumbers = memo((props) => {
   return (
     <div className={props.style}>
       {numArray.map((num) => {
-        return (
-          <Button onClick={genFunc(props.onAddDigit, num)} variant="contained">
+        /* return (
+          <Button
+            sx={{ backgroundColor: "#cf8907" }}
+            onClick={genFunc(props.onAddDigit, num)}
+            variant="contained"
+          >
             {num}
           </Button>
-        );
+        ); */
+        return <button onClick={genFunc(props.onAddDigit, num)}>{num}</button>;
       })}
     </div>
   );
@@ -27,24 +32,44 @@ export const CalculatorNumbers = memo((props) => {
 export const CalculatorOps = memo((props) => (
   <div className={props.style}>
     {opArray.map((op) => (
-      <Button onClick={genFunc(props.onAddSymbol, op)} variant="contained" sx={{width: '50%'}}>
+      /* <Button
+        onClick={genFunc(props.onAddSymbol, op)}
+        variant="contained"
+        sx={{ backgroundColor: "#cf8907", width: "50%" }}
+      >
         {op}
-      </Button>
+      </Button> */
+      <button onClick={genFunc(props.onAddSymbol, op)}>{op}</button>
     ))}
   </div>
 ));
 
 export const CalculatorButtons = memo((props) => (
   <div className={props.style}>
-    <Button onClick={genFunc(props.onRemoveDigit)} variant="contained">
+    {/* <Button
+      sx={{ backgroundColor: "#cf8907" }}
+      onClick={genFunc(props.onRemoveDigit)}
+      variant="contained"
+    >
       BACK
-    </Button>
-    <Button onClick={genFunc(props.onClear)} variant="contained">
+    </Button> */}
+    <button onClick={genFunc(props.onRemoveDigit)}>BACK</button>
+    {/* <Button
+      sx={{ backgroundColor: "#cf8907" }}
+      onClick={genFunc(props.onClear)}
+      variant="contained"
+    >
       CLEAR
-    </Button>
-    <Button onClick={genFunc(props.onCalculate)} variant="contained">
+    </Button> */}
+    <button onClick={genFunc(props.onClear)}>CLEAR</button>
+    {/* <Button
+      sx={{ backgroundColor: "#cf8907" }}
+      onClick={genFunc(props.onCalculate)}
+      variant="contained"
+    >
       CALC
-    </Button>
+    </Button> */}
+    <button onClick={genFunc(props.onCalculate)}>CALC</button>
   </div>
 ));
 
@@ -63,4 +88,3 @@ export const CalculatorScreen = (props) => (
     })}
   </div>
 );
-
